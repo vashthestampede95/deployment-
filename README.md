@@ -44,7 +44,7 @@ rebooting of each server
 
 
 ###Setting Log Svr Program:
-ASPMS staring and ending for OCC
+ASPMS starting and ending for OCC
 Creating archive daily purpose 
 Creating Rake Directory
 ending ASPMS
