@@ -3,7 +3,7 @@ three levels for deployment of application :
 updating the server 
 updating the log server 
 updating the workstation 
-###Workstation part:
+### Workstation part:
 Setting workstation :
 enabling admin using vb script 
 disabling usb for the workstation 
@@ -27,7 +27,7 @@ assigning ip address for every workstation and stations
 
 
 
-###Setting Server update :
+### Setting Server update :
 setting up Event log for the Server
 ending server point 
 enabling packet sender between lan 
@@ -43,7 +43,7 @@ rebooting of each server
 
 
 
-###Setting Log Svr Program:
+### Setting Log Svr Program:
 ASPMS starting and ending for OCC
 Creating archive daily purpose 
 Creating Rake Directory
