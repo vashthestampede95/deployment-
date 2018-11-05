@@ -112,7 +112,7 @@ Start-Process $InstallerPath"/ACCTKEY=`$AccountKey`"/ORGKEY=`"$OrganisationalKey
 function test-installation{
   Debug-Print("Verifying installation...")
 
-    # Ensure we resolve the correct Huntress directory regardless of operating system or process architecture.
+    # Ensure we resolve the correct VDU directory regardless of operating system or process architecture.
     $WindowsArchitecture = Get-WindowsArchitecture
     if ($WindowsArchitecture -eq $X86) {
         $VDUDirPath = Join-Path $Env:ProgramFiles "VDU"
