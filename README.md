@@ -3,7 +3,7 @@ three levels for deployment of application :
 updating the server 
 updating the log server 
 updating the workstation 
-Workstation part:
+###Workstation part:
 Setting workstation :
 enabling admin using vb script 
 disabling usb for the workstation 
@@ -24,7 +24,10 @@ then running the ats server after installation
 at installation creating a startup icon for the application 
 result in all work done is stored in ats log 
 assigning ip address for every workstation and stations
-Setting Server update :
+
+
+
+###Setting Server update :
 setting up Event log for the Server
 ending server point 
 enabling packet sender between lan 
@@ -34,7 +37,13 @@ enabling server log for inner test
 connecting/disconnecting of ats with teraform files coding
 updating each server 
 rebooting of each server 
-Setting Log Svr Program:
+
+
+
+
+
+
+###Setting Log Svr Program:
 ASPMS staring and ending for OCC
 Creating archive daily purpose 
 Creating Rake Directory
