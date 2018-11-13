@@ -32,12 +32,12 @@ setting up Event log for the Server
 ending server point 
 enabling packet sender between lan 
 enabling interface for each server at stations 
-enablin g storing at an archive log 
+enabling storing at an archive log 
 enabling server log for inner test 
 connecting/disconnecting of ats with teraform files coding
 updating each server 
 rebooting of each server 
-
+Auto login and shutdown usnig TTL library
 
 
 
