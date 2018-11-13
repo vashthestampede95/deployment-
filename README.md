@@ -44,8 +44,8 @@ Auto login and shutdown usnig TTL library
 
 
 ### Setting Log Svr Program:
-ASPMS starting and ending for OCC
-Creating archive daily purpose 
+1.ASPMS starting and ending for OCC
+2.Creating archive daily purpose 
 Creating Rake Directory
 ending ASPMS
 TCMS logger starting/ending
