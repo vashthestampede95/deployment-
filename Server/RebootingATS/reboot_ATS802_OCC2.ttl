@@ -1,12 +1,12 @@
 ;=============================================
 ; Filename    : remote-shutdown.ttl
 ; Description : Auto login and shutdown
-; Created     : 2017/06/18
+; Created     : 2018/11/15
 ; modified    :
 ;==============================================
 HOSTADDR = '172.21.101.1'
-USERNAME = 'dmrc'
-PASSWORD = 'nspj2015'
+USERNAME = 'DMRC'
+PASSWORD = '    '
 PROMPT_STR = 'dmrc@OCC:~$'
 SUDO_PROMPT_STR = '[sudo] password for dmrc:'
 ;==============================================
