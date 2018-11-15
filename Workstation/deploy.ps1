@@ -157,7 +157,7 @@ function test-installation{
    }
    #Ensure the wyupdate dependency created
    if ( ! (Test-Path $WyUpdaterPath)) {
-       $HuntressInstallationError = "The expected wyUpdate dependency $WyUpdaterPath did not exist."
+       $VDUInstallationError = "The expected wyUpdate dependency $WyUpdaterPath did not exist."
        Write-Host "$(Get-TimeStamp) $VDUInstallationError"
        Write-Host "$(Get-TimeStamp) $SupportMessage"
        throw $ScriptFailed
