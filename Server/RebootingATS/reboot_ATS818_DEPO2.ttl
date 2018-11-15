@@ -1,0 +1,31 @@
+;=============================================
+; Filename    : remote-shutdown.ttl
+; Description : Auto login and shutdown
+; Created     : 2017/06/18
+; modified    :
+;==============================================
+HOSTADDR = '172.21.101.18'
+USERNAME = 'DMRC'
+PASSWORD = '    '
+PROMPT_STR = 'dmrc@DEPO2:~$'
+SUDO_PROMPT_STR = '[sudo] password for dmrc:'
+;==============================================
+COMMAND = HOSTADDR
+strconcat COMMAND ':22 /ssh /2 /auth=password /user='
+strconcat COMMAND USERNAME
+strconcat COMMAND ' /passwd='
+strconcat COMMAND PASSWORD
+
+connect COMMAND
+
+
+yesnobox 'Reboot now?' HOSTADDR
+if result=0 then
+disconnect 0
+dispstr'Disconnecting now'
+endif
+
+sendln 'sudo reboot'
+
+end
+dispstr'Reboot is in Process'
