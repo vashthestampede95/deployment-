@@ -1,5 +1,5 @@
 cd /home/dmrc/VDU/
-if[Get-Process -id /tmp/.hascats.pid]{
+if[Get-Process |Select-Object Path  /tmp/.hascats.pid]{
 function wait-for-network ($tries) {
         while (1) {
 		# Get a list of DHCP-enabled interfaces that have a 
