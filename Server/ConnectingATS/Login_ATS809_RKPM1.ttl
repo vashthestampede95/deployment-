@@ -1,0 +1,20 @@
+;==============================================
+;Filename=remote-shutdown.ttl
+;Description=Auto Login and remote shutdown 
+;Created=2018/11/20
+;Modified=
+;==============================================
+HOSTADDR='172.21.101.9'
+USERNAME='DMRC'
+PASSWORD='    '
+PROMPT_STR='dmrc@RKPM1:~$'
+SUDO_PROMPT_STR=' [sudo] password for dmrc'
+;================================================
+COMMAND = HOSTADDR 
+strconcat COMMAND ':22 /ssh /2 /auth=password /user=' 
+strconcat COMMAND USERNAME 
+strconcat COMMAND ' /passwd=' 
+strconcat COMMAND PASSWORD
+
+connect COMMAND
+dispstr'Connection is done in ......Server RKPM'
