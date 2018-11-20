@@ -14,7 +14,7 @@ if(test-Connection -Cn $computer -quiet)
   
   if(TestPath -Path $testPath)
   {
-   Invoke-Command -ComputerName $server -ScriptBlock{powershell.exe               }
+   Invoke-Command -ComputerName $server -ScriptBlock{powershell.exe  c:\install\hascats.exe /sALl / msi /norestart ALLUSERS=1 EULA_ACCEPT=yes}            }
    Write-Host -ForegroundColor Green "Installation Successful on $server"
    }
   }else{
