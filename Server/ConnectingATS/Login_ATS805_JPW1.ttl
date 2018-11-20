@@ -17,3 +17,4 @@ strconcat COMMAND '/passwd='
 strconcat COMMAND PASSWORD
 
 connect COMMAND
+dispstr'Connection is done.....on SERVER JPW '
