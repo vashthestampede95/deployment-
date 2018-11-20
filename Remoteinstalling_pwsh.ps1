@@ -34,4 +34,5 @@ if(test-Connection -Cn $computer -quiet)
   }else{
         Write-Host -ForegroundColor Red "$Server is not online ,Installation failed"
         }
-  }      }
+  }      
+  }
