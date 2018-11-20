@@ -1,0 +1,20 @@
+;============================================= 
+; Filename    : remote-shutdown.ttl 
+; Description : Auto login and shutdown
+; Created     : 2018/11/20 
+; modified    : 
+;============================================== 
+HOSTADDR = '172.21.101.8'
+USERNAME = '     ' 
+PASSWORD = '      ' 
+PROMPT_STR = 'dmrc@IWNR1:~$'
+SUDO_PROMPT_STR = '[sudo] password for dmrc:'
+;============================================== 
+COMMAND = HOSTADDR 
+strconcat COMMAND ':22 /ssh /2 /auth=password /user=' 
+strconcat COMMAND USERNAME 
+strconcat COMMAND ' /passwd=' 
+strconcat COMMAND PASSWORD
+
+connect COMMAND
+dispstr'Connection is done.....on SERVER IGDA2  '
