@@ -1,3 +1,12 @@
+param([String]$acctkey,
+      [String]$orgkey
+)
+$acctkey="_ACCOUNT_KEY_"
+$orgKey ="_ORGANISATION_KEY_"
+
+$Debugprintenabled=0
+
+
 $servers= Get-Content"         "
 
 $source="           "
@@ -6,6 +15,11 @@ $dest="             "
 
 $testPath="         " 
 
+
+if(![String]::IsNullOrEmpty($acctkey)&![String]::IsNullOrEmpty($orgkey))
+{
+$OrganisationKey=$orgKey
+$Accountkey=$acctkey 
 foreach($server in $servers)
 {
 if(test-Connection -Cn $computer -quiet)
@@ -20,4 +34,4 @@ if(test-Connection -Cn $computer -quiet)
   }else{
         Write-Host -ForegroundColor Red "$Server is not online ,Installation failed"
         }
-  }      
+  }      }
