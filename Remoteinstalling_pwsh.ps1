@@ -39,7 +39,7 @@ if(test-Connection -Cn $computer -quiet)
   function Get-TimeStamp{
   return"[{0:MM/dd/yy} {0:HH:mm:ss}]" -f (Get-Date)
 }
-unction main(){
+function main(){
   #make sure the account key 
   Debug-Print("Checking for Account Key")
   if ($AccountKey -eq "__ACCOUNT_KEY__") {
